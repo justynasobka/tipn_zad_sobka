@@ -1,0 +1,66 @@
+---
+title: "Taniec nowoczesny"
+author: "Justyna Sobka"
+date: "7 czerwca 2018"
+output: 
+  html_document:
+    theme: spacelab
+    highlight: haddock
+    df_print: paged
+---
+
+## Taniec nowoczesny
+
+**Taniec nowoczesny** wywodzi się z początków XX wieku i koncentruje na interpretacji tancerza, a nie pojedynczych krokach. Tancerze odrzucają ograniczenia klasycznego baletu i skupiają się na tych prądach w tańcu, które za największą wartość uznają emocje. Kiedy na początku XX wieku europejscy tancerze zaczęli buntować się wobec surowych zasad klasycznego baletu, jego technik, kostiumów i butów, zwolenników zyskało nowatorskie, świeże spojrzenie na taniec. Pionierzy tańca nowoczesnego często tańczyli boso w odkrywających ciało kostiumach.
+
+### Jakie są style tańca nowoczesnego?
+
+* new style
+* jazz
+* hip-hop
+* breakdance
+* disco dance
+* street jazz
+* modern jazz
+* dancehall.
+
+(i parę innych)
+
+### Krótka charakterystyka wybranych stylów tanecznych:
+
+| Taniec | Opis |
+|--------|---------------------------------------------|
+| New style | taniec, który kształtował się wraz z rozwojem kultury hiphopowej. Ruchy w tym tańcu są żywe i zwinne, a zarazem radosne |
+| Dancehall | wywodzi się z Jamajki, gdzie powstał w latach 60. minionego wieku. Styl ten nawiązuje do reggae oraz jamajskiego social-dances. Współcześnie zalicza się go do hip-hopu. Taniec cechuje się ogromną dynamiką i charakterystycznymi dla niego ruchami bioder |
+| Street jazz | łączy w sobie elementy stylu funky, R&B oraz klasycznego jazzu. Jest to styl bardzo wymagający i trudny w opanowaniu, a zarazem dostarcza tancerzom wiele radości i pozytywnej energii. |
+
+## [TU MOŻNA POCZYTAĆ WIĘCEJ](https://portal.abczdrowie.pl/rodzaje-tanca-nowoczesnego)
+
+### 5 medycznych powodów, dla których warto tańczyć:
+
+1. Jest formą rehabilitacji
+2. Wpływa na układ krążenia, cholesterol, cukrzycę
+3. Zwiększa wydolność oddechową
+4. Pomaga na niestrawność
+5. Zmniejsza skutki osteoporozy i chroni przed upadkami
+
+### Code chunks
+
+```{r echo = TRUE}
+library(tidyverse)
+ggplot (data=mpg) +
+  geom_bar(mapping =aes(x = class, fill = class)) +
+  labs(title = "Rodzaje samochodów", x = "rodzaj samochodu")
+```
+
+```{r echo = FALSE}
+library(tidyverse)
+select(mpg, displ) %>% 
+  arrange(desc(displ))
+```
+
+```{r}
+funkcja <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+print(1:5)
+```
+
